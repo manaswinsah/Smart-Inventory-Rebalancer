@@ -1,4 +1,4 @@
-\# Smart Inventory Rebalancer
+# Smart Inventory Rebalancer
 
 
 
@@ -6,7 +6,7 @@ A full-stack inventory management and warehouse rebalancing system that monitors
 
 
 
-\## Overview
+## Overview
 
 
 
@@ -18,19 +18,19 @@ The system tracks:
 
 
 
-\* Products
+* Products
 
-\* Warehouses
+* Warehouses
 
-\* Inventory levels
+* Inventory levels
 
-\* Inventory transactions
+* Inventory transactions
 
-\* Rebalancing recommendations
+* Rebalancing recommendations
 
-\* Warehouse-to-warehouse stock transfers
+* Warehouse-to-warehouse stock transfers
 
-\* Inventory status and analytics
+* Inventory status and analytics
 
 
 
@@ -38,25 +38,25 @@ When inventory at a warehouse falls below its reorder threshold, the system can 
 
 
 
-\## Key Features
+## Key Features
 
 
 
-\### Inventory Management
+### Inventory Management
 
 
 
-\* View inventory across warehouses
+* View inventory across warehouses
 
-\* Track product quantities
+* Track product quantities
 
-\* Configure reorder thresholds
+* Configure reorder thresholds
 
-\* Automatically determine inventory status
+* Automatically determine inventory status
 
 
 
-\### Inventory Status
+### Inventory Status
 
 
 
@@ -68,15 +68,15 @@ For example:
 
 
 
-\* \*\*LOW\*\* — stock is below the reorder threshold
+* **LOW** — stock is below the reorder threshold
 
-\* \*\*NORMAL\*\* — stock is at or above the reorder threshold
+* **NORMAL** — stock is at or above the reorder threshold
 
-\* \*\*SURPLUS\*\* — stock is significantly above the required level
+* **SURPLUS** — stock is significantly above the required level
 
 
 
-\### Rebalancing Recommendations
+### Rebalancing Recommendations
 
 
 
@@ -88,25 +88,25 @@ If one warehouse has low stock while another has surplus stock, the system gener
 
 
 
-\* Product
+* Product
 
-\* Source warehouse
+* Source warehouse
 
-\* Destination warehouse
+* Destination warehouse
 
-\* Suggested transfer quantity
+* Suggested transfer quantity
 
-\* Source stock
+* Source stock
 
-\* Destination stock
+* Destination stock
 
-\* Reorder threshold
+* Reorder threshold
 
-\* Reason for the recommendation
+* Reason for the recommendation
 
 
 
-\### Warehouse Transfers
+### Warehouse Transfers
 
 
 
@@ -118,19 +118,19 @@ When a transfer is executed:
 
 
 
-1\. Stock is removed from the source warehouse.
+1. Stock is removed from the source warehouse.
 
-2\. Stock is added to the destination warehouse.
+2. Stock is added to the destination warehouse.
 
-3\. An `OUT` transaction is recorded for the source.
+3. An `OUT` transaction is recorded for the source.
 
-4\. An `IN` transaction is recorded for the destination.
+4. An `IN` transaction is recorded for the destination.
 
-5\. Inventory status is recalculated.
+5. Inventory status is recalculated.
 
 
 
-\### Transaction Tracking
+### Transaction Tracking
 
 
 
@@ -138,9 +138,9 @@ The system records inventory movements using:
 
 
 
-\* `IN` transactions
+* `IN` transactions
 
-\* `OUT` transactions
+* `OUT` transactions
 
 
 
@@ -148,7 +148,7 @@ This provides a history of inventory changes.
 
 
 
-\### Analytics Dashboard
+### Analytics Dashboard
 
 
 
@@ -156,57 +156,57 @@ The Streamlit frontend provides dashboard and analytics views for monitoring inv
 
 
 
-\## Technology Stack
+## Technology Stack
 
 
 
-\### Backend
+### Backend
 
 
 
-\* Python
+* Python
 
-\* FastAPI
+* FastAPI
 
-\* SQLAlchemy
+* SQLAlchemy
 
-\* PostgreSQL
-
-
-
-\### Frontend
+* PostgreSQL
 
 
 
-\* Streamlit
+### Frontend
 
 
 
-\### Database
+* Streamlit
 
 
 
-\* PostgreSQL
+### Database
 
 
 
-\### Testing
+* PostgreSQL
 
 
 
-\* Pytest
+### Testing
 
 
 
-\### HTTP Communication
+* Pytest
 
 
 
-\* Requests
+### HTTP Communication
 
 
 
-\## Project Structure
+* Requests
+
+
+
+## Project Structure
 
 
 
@@ -226,9 +226,9 @@ smart-inventory/
 
 │   ├── schemas.py
 
-│   ├── test\_database.py
+│   ├── test_database.py
 
-│   └── test\_main.py
+│   └── test_main.py
 
 │
 
@@ -248,7 +248,7 @@ smart-inventory/
 
 
 
-\## System Architecture
+## System Architecture
 
 
 
@@ -314,7 +314,7 @@ smart-inventory/
 
 
 
-\## Rebalancing Logic
+## Rebalancing Logic
 
 
 
@@ -366,7 +366,7 @@ Updated Inventory
 
 
 
-\## Example
+## Example
 
 
 
@@ -432,11 +432,11 @@ Delhi's inventory then reaches its reorder threshold and is no longer classified
 
 
 
-\## Running the Project
+## Running the Project
 
 
 
-\### 1. Activate the virtual environment
+### 1. Activate the virtual environment
 
 
 
@@ -446,13 +446,13 @@ From the project root:
 
 ```powershell
 
-.\\venv\\Scripts\\Activate.ps1
+.venvScriptsActivate.ps1
 
 ```
 
 
 
-\### 2. Start the FastAPI backend
+### 2. Start the FastAPI backend
 
 
 
@@ -478,7 +478,7 @@ http://127.0.0.1:8000
 
 
 
-\### 3. Start the Streamlit frontend
+### 3. Start the Streamlit frontend
 
 
 
@@ -488,9 +488,9 @@ Open another PowerShell window and navigate to the project:
 
 ```powershell
 
-cd C:\\Users\\manas\\smart-inventory
+cd C:Usersmanassmart-inventory
 
-.\\venv\\Scripts\\Activate.ps1
+.venvScriptsActivate.ps1
 
 cd frontend
 
@@ -504,7 +504,7 @@ The Streamlit application will provide the local URL in the terminal.
 
 
 
-\## Running Tests
+## Running Tests
 
 
 
@@ -524,7 +524,7 @@ The current test suite passes successfully.
 
 
 
-\## Future Improvements
+## Future Improvements
 
 
 
@@ -532,29 +532,29 @@ Potential future enhancements include:
 
 
 
-\* Authentication and role-based access
+* Authentication and role-based access
 
-\* More advanced demand forecasting
+* More advanced demand forecasting
 
-\* Automated reorder suggestions
+* Automated reorder suggestions
 
-\* Historical inventory trend analysis
+* Historical inventory trend analysis
 
-\* More detailed reporting
+* More detailed reporting
 
-\* Scheduled rebalancing
+* Scheduled rebalancing
 
-\* Multi-product transfer optimization
+* Multi-product transfer optimization
 
-\* Deployment to a cloud platform
-
-
-
-\## Project Status
+* Deployment to a cloud platform
 
 
 
-\*\*Core functionality complete and tested.\*\*
+## Project Status
+
+
+
+**Core functionality complete and tested.**
 
 
 
